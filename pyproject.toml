@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "airbnb-backend"
+version = "0.1.0"
+description = ""
+authors = ["eunkang <ek646@cornell.edu>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = "4.1"
+beautifulsoup4 = "^4.12.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
