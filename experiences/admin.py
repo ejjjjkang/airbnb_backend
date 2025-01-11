@@ -5,9 +5,19 @@ from .models import Experience, Perk
 # Register your models here.
 @admin.register(Experience)
 class ExperienceAdmin(admin.ModelAdmin):
-    pass
+    list_display = (
+        "name",
+        "price",
+        "start",
+        "end",
+        "created_at",
+    )
 
 @admin.register(Perk)
 class PerkAdmin(admin.ModelAdmin):
-    pass
+    list_display = (
+        "name",
+        "details",
+        "explanation",
+    )
 
